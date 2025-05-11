@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2thizo!8gqpfx(2)g*nx7v6337!!0(%w89w55b7fsrp!az@+3q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','.vercel.app']
 
 
 # Application definition
@@ -142,7 +142,7 @@ SPOTIFY_CLIENT_ID     = config("SPOTIFY_CLIENT_ID")
 
 SPOTIFY_CLIENT_SECRET = config("SPOTIFY_CLIENT_SECRET")
 
-SPOTIFY_REDIRECT_URI  = "http://127.0.0.1:8000/spotify/callback/"
+SPOTIFY_REDIRECT_URI  = "https://spotify-use.vercel.app/spotify/callback/"
 
 
 
