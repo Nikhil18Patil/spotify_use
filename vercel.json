@@ -1,0 +1,23 @@
+{
+    "builds": [
+      {
+        "src": "Spotify_use/wsgi.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "static/**/*",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "dest": "/static/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "Spotify_use/wsgi.py"
+      }
+    ]
+  }
+  
